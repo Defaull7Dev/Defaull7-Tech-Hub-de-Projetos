@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "Defaull7 Dev",
+    "descricao": "Site portfólio desenvolvido em HTML, CSS e JavaScript onde estão listados os projetos desenvolvidos por Defaull7 Dev, incluindo detalhes sobre cada projeto e links para acesso.",
+    "autor": "Defaull7 Dev",
+    "link": "https://defaull7dev.github.io/Wallpapers-Hub-by-Defaull7-Dev/"
+  },
+  {
+    "nome": "Starbucks Site V3",
+    "descricao": "Um site de exemplo para a Starbucks, desenvolvido como parte de um projeto de aprendizado e prática de desenvolvimento web.",
+    "autor": "Defaull7 Dev",
+    "link": "https://defaull7dev.github.io/Starbucks-site/"
+  },
+  {
+    "nome": "Dev Base V3",
+    "descricao": "Site que apresenta linguagens de programação e tecnologias, com links de direcionamento direto ao diretório da linguagem.",
+    "autor": "Defaull7 Dev",
+    "link": "https://defaull7dev.github.io/Dev-Base/"
+  },
+  {
+    "nome": "Imersao-dados_python",
+    "descricao": "Projeto de análise de dados utilizando Python com os recursos Stremlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.",
+    "autor": "Defaull7 Dev",
+    "link": "https://imersao-dados-pythondefaull7dev.streamlit.app/"
+  }
+
+]
