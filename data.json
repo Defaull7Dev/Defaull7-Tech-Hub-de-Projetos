@@ -3,25 +3,28 @@
     "nome": "Wallpapers Hub by Defaull7 Dev",
     "descricao": "Site de Wallpapers projetado para divulgação de Imagens e Papéis de parede para PC.",
     "autor": "Defaull7 Dev",
-    "link": "https://defaull7dev.github.io/Wallpapers-Hub-by-Defaull7-Dev/"
+    "link": "https://defaull7dev.github.io/Wallpapers-Hub-by-Defaull7-Dev/",
+    "linkGithub": "https://github.com/Defaull7Dev/Wallpapers-Hub-by-Defaull7-Dev"
   },
   {
     "nome": "Starbucks Site V3",
     "descricao": "Um site de exemplo para a Starbucks, desenvolvido como parte de um projeto de aprendizado e prática de desenvolvimento web.",
     "autor": "Defaull7 Dev",
-    "link": "https://defaull7dev.github.io/Starbucks-site/"
+    "link": "https://defaull7dev.github.io/Starbucks-site/",
+    "linkGithub": "https://github.com/Defaull7Dev/Starbucks-site"
   },
   {
     "nome": "Dev Base V3",
     "descricao": "Site que apresenta linguagens de programação e tecnologias, com links de direcionamento direto ao diretório da linguagem.",
     "autor": "Defaull7 Dev",
-    "link": "https://defaull7dev.github.io/Dev-Base/"
+    "link": "https://defaull7dev.github.io/Dev-Base/",
+    "linkGithub": "https://github.com/Defaull7Dev/Dev-Base"
   },
   {
     "nome": "Imersao-dados_python",
-    "descricao": "Projeto de análise de dados utilizando Python com os recursos Stremlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.",
+    "descricao": "Projeto de análise de dados utilizando Python com os recursos Streamlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.",
     "autor": "Defaull7 Dev",
-    "link": "https://imersao-dados-pythondefaull7dev.streamlit.app/"
+    "link": "https://imersao-dados-pythondefaull7dev.streamlit.app/",
+    "linkGithub": "https://github.com/Defaull7Dev/Imersao-dados_python"
   }
-
 ]

@@ -7,12 +7,14 @@ const dadosFallback = [
   {
     nome: "Defaull7 Dev",
     descricao: "Defaull7 Dev é uma iniciativa inovadora focada em explorar novas fronteiras tecnológicas e científicas.",
-    link: "https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/"
+    link: "https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/",
+    linkGithub: "https://github.com/Defaull7Dev"
   },
   {
     nome: "Projetos",
     descricao: "Conheça alguns projetos de exemplo desenvolvidos pela Defaull7 Tech.",
-    link: "https://github.com/Defaull7Dev"
+    link: "https://github.com/Defaull7Dev",
+    linkGithub: "https://github.com/Defaull7Dev"
   }
 ];
 
@@ -30,7 +32,7 @@ async function botaoBusca() {
     }
 
     const termoBusca = searchInput.value.toLowerCase().trim();
-    
+
     const dadosFiltrados = dados.filter(dado =>
       dado.nome.toLowerCase().includes(termoBusca) ||
       dado.descricao.toLowerCase().includes(termoBusca)
@@ -39,7 +41,6 @@ async function botaoBusca() {
     renderizarCards(dadosFiltrados.length > 0 ? dadosFiltrados : dadosFallback);
   } catch (error) {
     console.warn("Erro ao carregar JSON, usando dados fallback:", error);
-    // Usa dados fallback automaticamente se o fetch falhar
     const termoBusca = searchInput.value.toLowerCase().trim();
     const dadosFiltrados = dadosFallback.filter(dado =>
       dado.nome.toLowerCase().includes(termoBusca) ||
@@ -54,13 +55,9 @@ async function botaoBusca() {
 
 function renderizarCards(dados) {
   cardContainer.innerHTML = '';
-  
+
   if (dados.length === 0) {
-    cardContainer.innerHTML = `
-      <div class="no-results">
-        <p>Nenhum resultado encontrado para sua busca.</p>
-      </div>
-    `;
+    cardContainer.innerHTML = `<div class="no-results"><p>Nenhum resultado encontrado para sua busca.</p></div>`;
     return;
   }
 
@@ -68,13 +65,21 @@ function renderizarCards(dados) {
     const article = document.createElement('article');
     article.classList.add('card');
     article.style.animation = `fadeIn 0.5s ease ${index * 0.1}s both`;
-    
+
+    // Link do GitHub do JSON (com fallback caso não exista)
+    const linkGithub = dado.linkGithub || dado.link;
+
     article.innerHTML = `
       <h2>${dado.nome}</h2>
       <p>${dado.descricao}</p>
-      <a href="${dado.link}" target="_blank">
-        Acessar Projeto <span>→</span>
-      </a>
+      <div class="card-actions">
+        <a href="${dado.link}" target="_blank" class="card-btn card-btn-primary">
+          Acessar Site <span>→</span>
+        </a>
+        <a href="${linkGithub}" target="_blank" class="card-btn card-btn-github">
+          GitHub <span>→</span>
+        </a>
+      </div>
     `;
     cardContainer.appendChild(article);
   });
