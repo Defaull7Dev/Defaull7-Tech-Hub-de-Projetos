@@ -1,0 +1,5 @@
+# Não commitar arquivos de log
+*.json
+*.txt
+*.log
+!README.md

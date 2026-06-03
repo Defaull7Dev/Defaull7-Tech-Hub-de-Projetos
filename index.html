@@ -1,45 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Defaull7 Tech | Projetos</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defaull7 Tech | Projetos</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      // SUBSTITUA PELA SUA PUBLIC KEY DO EMAILJS
+      emailjs.init("1timzwfBVtlk7O-8L");
+   })();
+</script>
 <body>
-    <nav class="navbar">
-        <a href="#" class="nav-brand">Defaull7 Tech</a>
-        <div class="nav-links">            
-            <a href="https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Defaull7Dev" target="_blank" class="nav-github">GitHub</a>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#" class="nav-brand">Defaull7 Tech</a>
+    <div class="nav-links">
+        <a href="https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Defaull7Dev" target="_blank" class="nav-github">GitHub</a>
+    </div>
+</nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Transformando ideias em Tecnologia</h1>
-            <p>Explore ferramentas, soluções criativas e projetos inovadores desenvolvidos por Defaull7 Dev.</p>
-            <div class="search-container">
-                <input type="text" id="busca-input" class="search-input" placeholder="Buscar projetos...">
-                <button class="btn-search" onclick="botaoBusca()">Buscar</button>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Transformando ideias em Tecnologia</h1>
+        <p>Explore ferramentas, soluções criativas e projetos inovadores desenvolvidos por Defaull7 Dev.</p>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="busca-input" placeholder="Buscar projetos...">
+            <button class="btn-search" onclick="botaoBusca()">Buscar</button>
+        </div>
+    </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="results-section">
+    <h2 class="section-title">Projetos Disponíveis</h2>
+    <div class="cards-grid card-container">
+        <!-- Cards serão inseridos via JavaScript -->
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-brand">Defaull7 Tech by Defaull7 Dev</div>
+    <div class="footer-links">
+        <a href="https://github.com/Defaull7Dev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="footer-copy">© 2024-2026 Defaull7 Tech. Todos os direitos reservados.</div>
+</footer>
+
+<!-- =============================================
+     MINI PLAYER FLUTUANTE (canto inferior esquerdo)
+     ============================================= -->
+<div class="mini-player" id="miniPlayer">
+    <button class="mini-player-toggle" id="mpToggle" title="Abrir/Fechar player">
+        
+    </button>
+    
+    <div class="mini-player-content" id="mpContent">
+        <div class="mp-track-info">
+            <div class="mp-artwork">🎶</div>
+            <div class="mp-track-text">
+                <span class="mp-track-title" id="mpTitle">Nenhuma música</span>
+                <span class="mp-track-artist" id="mpArtist">—</span>
             </div>
         </div>
-    </section>
-
-    <section class="results-section" id="projetos">
-        <h2 class="section-title">Projetos Disponíveis</h2>
-        <div class="cards-grid card-container"></div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-brand">Defaull7 Tech by Defaull7 Dev</div>
-        <div class="footer-links">
-            <a href="https://github.com/Defaull7Dev" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/" target="_blank">LinkedIn</a>
+        
+        <div class="mp-controls">
+            <button class="mp-btn" id="mpPrev" title="Anterior"></button>
+            <button class="mp-btn mp-play-btn" id="mpPlay" title="Play/Pause">▶</button>
+            <button class="mp-btn" id="mpNext" title="Próxima">⏭</button>
         </div>
-        <div class="footer-copy">© 2024-2026 Defaull7 Tech. Todos os direitos reservados.</div>
-    </footer>
+        
+        <div class="mp-progress-container">
+            <span class="mp-time" id="mpCurrent">0:00</span>
+            <input type="range" class="mp-slider" id="mpProgress" min="0" max="100" value="0" step="0.1">
+            <span class="mp-time" id="mpDuration">0:00</span>
+        </div>
+        
+        <div class="mp-volume">
+            <span>🔊</span>
+            <input type="range" class="mp-slider mp-volume-slider" id="mpVolume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<!-- =============================================
+     HUB DE COMENTÁRIOS (canto inferior direito)
+     ============================================= -->
+<div class="comment-hub" id="commentHub">
+    <button class="comment-toggle" id="commentToggle" title="Abrir comentários">
+        💬
+        <span class="comment-badge" id="commentBadge" style="display:none;">0</span>
+    </button>
+    
+    <div class="comment-content" id="commentContent">
+        <div class="comment-header">
+            <h3>💬 Comentários</h3>
+            <button class="comment-close" id="commentClose">✕</button>
+        </div>
+        
+        <div class="comment-messages" id="commentMessages">
+            <div class="comment-empty">
+                <p>Nenhum comentário ainda.</p>
+                <p class="comment-hint">Seja o primeiro a comentar!</p>
+            </div>
+        </div>
+        
+        <form class="comment-form" id="commentForm">
+            <div class="form-group">
+                <input type="text" id="comNome" class="form-input" placeholder="Nome *" required>
+                <span class="error-msg" id="errNome"></span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="comEmail" class="form-input" placeholder="Email *" required>
+                <span class="error-msg" id="errEmail"></span>
+            </div>
+            <div class="form-group">
+                <select id="comProjeto" class="form-input" required>
+                    <option value="">Selecione o projeto *</option>
+                </select>
+                <span class="error-msg" id="errProjeto"></span>
+            </div>
+            <div class="form-group">
+                <textarea id="comComentario" class="form-input" placeholder="Seu comentário *" required rows="3"></textarea>
+                <span class="error-msg" id="errComentario"></span>
+            </div>
+            <button type="submit" class="comment-submit" id="commentSubmit">
+                Enviar comentário
+            </button>
+            <div class="form-status" id="formStatus"></div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
