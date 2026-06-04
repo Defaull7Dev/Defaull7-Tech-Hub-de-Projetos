@@ -15,13 +15,13 @@ const dadosFallback = [
         nome: "Defaull7 Dev",
         descricao: "Defaull7 Dev é uma iniciativa inovadora focada em explorar novas fronteiras tecnológicas e científicas.",
         link: "https://www.linkedin.com/in/nickolas-oliveira-bonavita-magalhães-092a06189/",
-        linkGithub: "https://github.com/Defaull7Dev"
+        linkGithub: "https://github.com/NickDev717"
     },
     {
         nome: "Projetos",
         descricao: "Conheça alguns projetos de exemplo desenvolvidos pela Defaull7 Tech.",
-        link: "https://github.com/Defaull7Dev",
-        linkGithub: "https://github.com/Defaull7Dev"
+        link: "https://github.com/NickDev717",
+        linkGithub: "https://github.com/NickDev717"
     }
 ];
 
