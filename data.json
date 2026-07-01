@@ -1,62 +1,16 @@
 {
   "dados": [
-    {
-      "nome": "Wallpapers Hub by NickDev",
-      "descricao": "Site de Wallpapers projetado para divulgação de Imagens e Papéis de parede para PC.",
-      "autor": "NickDev",
-      "link": "https://nickdev717.github.io/Wallpapers-Hub-by-NickDev/",
-      "linkGithub": "https://github.com/NickDev717/Wallpapers-Hub-by-NickDev"
-    },
-    {
-      "nome": "Starbucks Site V3",
-      "descricao": "Um site de exemplo para a Starbucks, desenvolvido como parte de um projeto de aprendizado e prática de desenvolvimento web.",
-      "autor": "NickDev",
-      "link": "https://nickdev717.github.io/Starbucks-site/",
-      "linkGithub": "https://github.com/NickDev717/Starbucks-site"
-    },
-    {
-      "nome": "Dev Base V3",
-      "descricao": "Site que apresenta linguagens de programação e tecnologias, com links de direcionamento direto ao diretório da linguagem.",
-      "autor": "NickDev",
-      "link": "https://nickdev717.github.io/Dev-Base/",
-      "linkGithub": "https://github.com/NickDev717/Dev-Base"
-    },
-    {
-      "nome": "Imersao-dados_python",
-      "descricao": "Projeto de análise de dados utilizando Python com os recursos Streamlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.",
-      "autor": "NickDev",
-      "link": "https://data-python-nickdev.streamlit.app/",
-      "linkGithub": "https://github.com/NickDev717/Imersao-dados_python"
-    },
-    {
-      "nome": "Defaull7 Player",
-      "descricao": "Player de música desenvolvido pela Defaull7 Tech com interface moderna, controles intuitivos e suporte para múltiplas faixas de áudio.",
-      "autor": "NickDev",
-      "link": "https://nickdev717.github.io/Defaull7-Player/",
-      "linkGithub": "https://github.com/NickDev717/Defaull7-Player"
-    }
+    {"nome": "Wallpapers Hub by NickDev", "descricao": "Site de Wallpapers projetado para divulgação de Imagens e Papéis de parede para PC.", "autor": "NickDev", "link": "https://nickdev717.github.io/Wallpapers-Hub-by-NickDev/", "linkGithub": "https://github.com/NickDev717/Wallpapers-Hub-by-NickDev"},
+    {"nome": "Starbucks Site V3", "descricao": "Um site de exemplo para a Starbucks, desenvolvido como parte de um projeto de aprendizado e prática de desenvolvimento web.", "autor": "NickDev", "link": "https://nickdev717.github.io/Starbucks-site/", "linkGithub": "https://github.com/NickDev717/Starbucks-site"},
+    {"nome": "Dev Base V3", "descricao": "Site que apresenta linguagens de programação e tecnologias, com links de direcionamento direto ao diretório da linguagem.", "autor": "NickDev", "link": "https://nickdev717.github.io/Dev-Base/", "linkGithub": "https://github.com/NickDev717/Dev-Base"},
+    {"nome": "Imersao-dados_python", "descricao": "Projeto de análise de dados utilizando Python com os recursos Streamlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.", "autor": "NickDev", "link": "https://data-python-nickdev.streamlit.app/", "linkGithub": "https://github.com/NickDev717/Imersao-dados_python"},
+    {"nome": "Defaull7 Player","descricao": "Player de música desenvolvido pela Defaull7 Tech com interface moderna, controles intuitivos e suporte para múltiplas faixas de áudio.", "autor": "NickDev", "link": "https://nickdev717.github.io/Defaull7-Player/", "linkGithub": "https://github.com/NickDev717/Defaull7-Player"}
   ],
   
   "musicas": [
-    {
-      "titulo": "Japan",
-      "artista": "Throttle [Monstercat Release]",
-      "arquivo": "musicas/Throttle - Japan [Monstercat Release].mp3"
-    },
-    {
-      "titulo": "Ether",
-      "artista": "Jakob Ahlbom",
-      "arquivo": "musicas/Jakob Ahlbom - Ether.mp3"
-    },
-    {
-      "titulo": "Sangria",
-      "artista": "Alx Beats",
-      "arquivo": "musicas/Alx Beats - Sangria.mp3"
-    },
-    {
-      "titulo": "Perspective",
-      "artista": "Barnes BLVD.",
-      "arquivo": "musicas/Barnes BLVD. - Perspective.mp3"
-    }    
+    {"titulo": "Japan", "artista": "Throttle [Monstercat Release]", "arquivo": "musicas/Throttle - Japan [Monstercat Release].mp3"},
+    {"titulo": "Ether", "artista": "Jakob Ahlbom", "arquivo": "musicas/Jakob Ahlbom - Ether.mp3"},
+    {"titulo": "Sangria", "artista": "Alx Beats", "arquivo": "musicas/Alx Beats - Sangria.mp3"},
+    {"titulo": "Perspective","artista": "Barnes BLVD.","arquivo": "musicas/Barnes BLVD. - Perspective.mp3"}    
   ]
 }

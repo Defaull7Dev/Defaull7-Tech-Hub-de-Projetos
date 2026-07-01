@@ -11,6 +11,9 @@
     --text-secondary: #94a3b8;
     --border-color: rgba(255, 255, 255, 0.1);
     --gradient-main: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+    
+    /* Variável para imagem de fundo do hero (configure aqui ou inline) */
+    --hero-bg-image: none;
 }
 
 * {
@@ -92,15 +95,20 @@ button, input, textarea, select { font: inherit; }
 /* --- HERO SECTION --- */
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 4rem 1rem;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.08) 0%, transparent 60%),
-                radial-gradient(circle at 80% 20%, rgba(140, 40, 255, 0.1) 0%, transparent 40%);
+    /* Fundo com gradientes e padrão, mais a imagem definida pela variável */
+    background-image: var(--hero-bg-image),
+                      radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.08) 0%, transparent 60%),
+                      radial-gradient(circle at 80% 20%, rgba(140, 40, 255, 0.1) 0%, transparent 40%);
+    background-size: cover, auto, auto;
+    background-position: center, center, center;
+    background-blend-mode: overlay, normal, normal;
 }
 
 .hero::before {
@@ -372,6 +380,7 @@ button, input, textarea, select { font: inherit; }
 }
 
 .mini-player-content {
+    position: relative; /* para posicionar o botão de fechar */
     background: rgba(17, 24, 39, 0.95);
     backdrop-filter: blur(15px);
     border: 1px solid var(--border-color);
@@ -393,11 +402,33 @@ button, input, textarea, select { font: inherit; }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Botão de fechar (X) do player */
+.mp-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.mp-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-cyan);
+}
+
 .mp-track-info {
     display: flex;
     align-items: center;
     gap: 0.8rem;
     margin-bottom: 0.8rem;
+    padding-right: 24px; /* para não encostar no X */
 }
 
 .mp-artwork {

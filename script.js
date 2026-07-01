@@ -40,6 +40,7 @@ const mpDuration = document.getElementById('mpDuration');
 const mpVolumeSlider = document.getElementById('mpVolume');
 const mpToggle = document.getElementById('mpToggle');
 const mpContent = document.getElementById('mpContent');
+const mpClose = document.getElementById('mpClose'); // novo botão
 
 // Inicializar ícones dos botões de controle para garantir que apareçam
 mpPrevBtn.textContent = '⏮';
@@ -103,9 +104,12 @@ function mpOpenPlayer() {
 function mpClosePlayer() {
     mpContent.classList.remove('visible');
     mpToggle.classList.remove('active');
+    // Se a música estiver tocando, pausa?
+    // Não pausamos para manter a experiência, apenas ocultamos.
 }
 
 mpToggle.addEventListener('click', mpOpenPlayer);
+mpClose.addEventListener('click', mpClosePlayer); // evento do novo botão
 mpPlayBtn.addEventListener('click', togglePlay);
 mpNextBtn.addEventListener('click', nextTrack);
 mpPrevBtn.addEventListener('click', prevTrack);
