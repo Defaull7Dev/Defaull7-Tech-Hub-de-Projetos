@@ -1,6 +1,7 @@
 {
   "dados": [
     {"nome": "Wallpapers Hub by NickDev", "descricao": "Site de Wallpapers projetado para divulgação de Imagens e Papéis de parede para PC.", "autor": "NickDev", "link": "https://nickdev717.github.io/Wallpapers-Hub-by-NickDev/", "linkGithub": "https://github.com/NickDev717/Wallpapers-Hub-by-NickDev"},
+    {"nome": "FireOwl Store", "descricao": "Site de Action figures e estátuas Premium projetado para divulgação dos itens via PC e Mobile.", "autor": "NickDev", "link": "https://nickdev717.github.io/FireOwl-Store/", "linkGithub": "https://github.com/NickDev717/FireOwl-Store"},
     {"nome": "Starbucks Site V3", "descricao": "Um site de exemplo para a Starbucks, desenvolvido como parte de um projeto de aprendizado e prática de desenvolvimento web.", "autor": "NickDev", "link": "https://nickdev717.github.io/Starbucks-site/", "linkGithub": "https://github.com/NickDev717/Starbucks-site"},
     {"nome": "Dev Base V3", "descricao": "Site que apresenta linguagens de programação e tecnologias, com links de direcionamento direto ao diretório da linguagem.", "autor": "NickDev", "link": "https://nickdev717.github.io/Dev-Base/", "linkGithub": "https://github.com/NickDev717/Dev-Base"},
     {"nome": "Imersao-dados_python", "descricao": "Projeto de análise de dados utilizando Python com os recursos Streamlit, Pandas e Plotly, com foco em visualização e interpretação de dados complexos.", "autor": "NickDev", "link": "https://data-python-nickdev.streamlit.app/", "linkGithub": "https://github.com/NickDev717/Imersao-dados_python"},
